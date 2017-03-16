@@ -221,17 +221,6 @@ F 3 "" H 6750 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR093
-U 1 1 58AB4906
-P 7150 1200
-F 0 "#PWR093" H 7150 950 50  0001 C CNN
-F 1 "GND" H 7150 1050 50  0000 C CNN
-F 2 "" H 7150 1200 50  0001 C CNN
-F 3 "" H 7150 1200 50  0001 C CNN
-	1    7150 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L L L10
 U 1 1 58AB5324
 P 7750 4700
@@ -480,21 +469,6 @@ F 5 "20%" H 300 -50 60  0001 L CNN "Tolerance"
 F 6 "X7R" H 250 50  60  0001 L CNN "Type"
 F 7 "0402" H 250 -250 60  0001 L CNN "Package"
 	1    6750 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C37
-U 1 1 58B661C8
-P 7150 1050
-F 0 "C37" H 7265 1096 50  0000 L CNN
-F 1 "1n" H 7265 1005 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 638 -250 50  0001 C CNN
-F 3 "" H 600 -100 50  0001 C CNN
-F 4 "16V" H 700 -150 60  0001 L CNN "Voltage"
-F 5 "20%" H 700 -50 60  0001 L CNN "Tolerance"
-F 6 "X7R" H 650 50  60  0001 L CNN "Type"
-F 7 "0402" H 650 -250 60  0001 L CNN "Package"
-	1    7150 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1036,7 +1010,6 @@ Wire Wire Line
 	4900 900  7400 900 
 Connection ~ 6400 900 
 Connection ~ 6750 900 
-Connection ~ 7150 900 
 Wire Wire Line
 	1200 3450 1200 3550
 Wire Wire Line
@@ -1352,5 +1325,32 @@ F 6 "C0G" V 8932 2300 60  0000 C CNN "Type"
 F 7 "0402" H 2600 1000 60  0001 L CNN "Package"
 	1    9100 2300
 	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR093
+U 1 1 58AB4906
+P 7150 1200
+F 0 "#PWR093" H 7150 950 50  0001 C CNN
+F 1 "GND" H 7150 1050 50  0000 C CNN
+F 2 "" H 7150 1200 50  0001 C CNN
+F 3 "" H 7150 1200 50  0001 C CNN
+	1    7150 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7150 900 
+$Comp
+L C C37
+U 1 1 58B661C8
+P 7150 1050
+F 0 "C37" H 7265 1096 50  0000 L CNN
+F 1 "0.01u" H 7265 1005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 638 -250 50  0001 C CNN
+F 3 "" H 600 -100 50  0001 C CNN
+F 4 "16V" H 700 -150 60  0001 L CNN "Voltage"
+F 5 "20%" H 700 -50 60  0001 L CNN "Tolerance"
+F 6 "X7R" H 650 50  60  0001 L CNN "Type"
+F 7 "0402" H 650 -250 60  0001 L CNN "Package"
+	1    7150 1050
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
