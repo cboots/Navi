@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Navi-rescue
 LIBS:device
 LIBS:rfcom
 LIBS:atmel
@@ -25,7 +26,7 @@ LIBS:analog_switches
 LIBS:Power_Management
 LIBS:powerint
 LIBS:onsemi
-LIBS:Flight Computer-cache
+LIBS:Navi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1021,17 +1022,6 @@ NoConn ~ 1850 6750
 NoConn ~ 1850 6550
 Wire Wire Line
 	1800 6450 1850 6450
-$Comp
-L LP5521YQ U6
-U 1 1 58D0B021
-P 2800 6450
-F 0 "U6" H 2100 5650 60  0000 C CNN
-F 1 "LP5521YQ/NOPB" H 3250 5650 60  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-24-1EP_4x5mm_Pitch0.5mm" H -150 -800 60  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/texas-instruments/LP5521YQ-NOPB/LP5521YQ-NOPBCT-ND/1836170" H -200 -950 60  0001 C CNN
-	1    2800 6450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 6350 5050 6350
 Wire Wire Line
@@ -1142,6 +1132,17 @@ F 1 "Mounting_Hole" H 800 7405 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_2.5mm" H -3500 400 50  0001 C CNN
 F 3 "" H -3500 400 50  0001 C CNN
 	1    700  7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LP5521YQ U6
+U 1 1 58D0B021
+P 2800 6450
+F 0 "U6" H 2100 5650 60  0000 C CNN
+F 1 "LP5521YQ/NOPB" H 3250 5650 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-24-1EP_4x5mm_Pitch0.5mm" H -150 -800 60  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/texas-instruments/LP5521YQ-NOPB/LP5521YQ-NOPBCT-ND/1836170" H -200 -950 60  0001 C CNN
+	1    2800 6450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

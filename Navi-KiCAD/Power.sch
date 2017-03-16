@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Navi-rescue
 LIBS:device
 LIBS:rfcom
 LIBS:atmel
@@ -25,7 +26,7 @@ LIBS:analog_switches
 LIBS:Power_Management
 LIBS:powerint
 LIBS:onsemi
-LIBS:Flight Computer-cache
+LIBS:Navi-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
