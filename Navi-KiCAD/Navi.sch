@@ -134,7 +134,6 @@ U 58AA09CD
 F0 "Power" 60
 F1 "Power.sch" 60
 F2 "~SHDN" I L 8750 900 60 
-F3 "PGOOD" O R 10150 900 60 
 $EndSheet
 $Sheet
 S 1150 4400 1000 600 
@@ -183,8 +182,7 @@ F27 "900-DIO-[10..22]" B R 2350 3200 60
 F28 "900-ADIO-[23..30]" B R 2350 3300 60 
 F29 "2.4-DIO-[7..22]" B R 2350 3400 60 
 F30 "2.4-ADIO-[23..30]" B R 2350 3500 60 
-F31 "Power-Good" I L 1200 1600 60 
-F32 "Power-~SHDN" O L 1200 1700 60 
+F31 "Power-~SHDN" O L 1200 1700 60 
 $EndSheet
 Text Label 5600 1600 0    60   ~ 0
 2.4G-Rx
@@ -691,17 +689,9 @@ Wire Wire Line
 Text Label 7850 900  0    60   ~ 0
 Power-~SHDN~
 Wire Wire Line
-	10150 900  10750 900 
-Text Label 10200 900  0    60   ~ 0
-Power-Good
-Wire Wire Line
 	1200 1700 550  1700
 Text Label 550  1700 0    60   ~ 0
 Power-~SHDN~
-Wire Wire Line
-	550  1600 1200 1600
-Text Label 550  1600 0    60   ~ 0
-Power-Good
 Wire Wire Line
 	3800 2900 2350 2900
 Text Label 3200 2600 0    60   ~ 0
