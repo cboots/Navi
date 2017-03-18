@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Navi-rescue
 LIBS:device
 LIBS:rfcom
 LIBS:atmel
@@ -26,6 +25,12 @@ LIBS:analog_switches
 LIBS:Power_Management
 LIBS:powerint
 LIBS:onsemi
+LIBS:transistors
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:stm32
+LIBS:transf
+LIBS:ttl_ieee
 LIBS:Navi-cache
 EELAYER 26 0
 EELAYER END
@@ -42,10 +47,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +3.3V #PWR0123
+L +3.3V #PWR0124
 U 1 1 58AB9BA4
 P 9650 3900
-F 0 "#PWR0123" H 4650 800 50  0001 C CNN
+F 0 "#PWR0124" H 4650 800 50  0001 C CNN
 F 1 "+3.3V" H 9665 4073 50  0000 C CNN
 F 2 "" H 4650 950 50  0001 C CNN
 F 3 "" H 4650 950 50  0001 C CNN
@@ -55,10 +60,10 @@ $EndComp
 Text HLabel 6050 3850 0    60   Input ~ 0
 ~SHDN
 $Comp
-L GND #PWR0124
+L GND #PWR0125
 U 1 1 58ABCF35
 P 4900 4150
-F 0 "#PWR0124" H 1650 -650 50  0001 C CNN
+F 0 "#PWR0125" H 1650 -650 50  0001 C CNN
 F 1 "GND" H 4905 3977 50  0000 C CNN
 F 2 "" H 1650 -400 50  0001 C CNN
 F 3 "" H 1650 -400 50  0001 C CNN
@@ -66,10 +71,10 @@ F 3 "" H 1650 -400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0125
+L GND #PWR0126
 U 1 1 58ABD05E
 P 3900 4150
-F 0 "#PWR0125" H 650 -650 50  0001 C CNN
+F 0 "#PWR0126" H 650 -650 50  0001 C CNN
 F 1 "GND" H 3905 3977 50  0000 C CNN
 F 2 "" H 650 -400 50  0001 C CNN
 F 3 "" H 650 -400 50  0001 C CNN
@@ -79,7 +84,7 @@ $EndComp
 Wire Wire Line
 	5250 3950 6350 3950
 Wire Wire Line
-	3700 3750 6350 3750
+	2800 3750 6350 3750
 Wire Wire Line
 	5250 4300 5250 4250
 Wire Wire Line
@@ -90,109 +95,33 @@ Connection ~ 4900 3750
 Wire Wire Line
 	3900 3850 3900 3750
 Connection ~ 3900 3750
-$Comp
-L GND #PWR0126
-U 1 1 58ABDCB9
-P 3150 4150
-F 0 "#PWR0126" H -100 -650 50  0001 C CNN
-F 1 "GND" H 3155 3977 50  0000 C CNN
-F 2 "" H -100 -400 50  0001 C CNN
-F 3 "" H -100 -400 50  0001 C CNN
-	1    3150 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 3750 3400 3750
-Wire Wire Line
-	3150 3750 3150 3850
-Connection ~ 3150 3750
-Text Notes 3250 3650 0    60   ~ 0
-Input pi filter (helps block ESC noise)
-$Comp
-L L L20
-U 1 1 58AC1391
-P 3550 3750
-F 0 "L20" V 3600 3600 50  0000 C CNN
-F 1 "74404052100" V 3500 3750 50  0000 C CNN
-F 2 "Inductors:Inductor_Wurth_LQS-5020" H -1600 450 50  0001 C CNN
-F 3 "http://katalog.we-online.de/pbs/datasheet/74404052100.pdf" H -1600 450 50  0001 C CNN
-	1    3550 3750
-	0    -1   -1   0   
-$EndComp
 Text Notes 9850 3750 0    60   ~ 0
 @1A
-Text Notes 3250 3550 0    60   ~ 0
-3.5 to 36V input (derates for 28.8V)
-$Comp
-L D D6
-U 1 1 58B2E19A
-P 2400 3300
-F 0 "D6" H 2400 3084 50  0000 C CNN
-F 1 "SS24FL" H 2400 3175 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123F" H 1100 1350 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NTS245SF-D.PDF" H 1100 1350 50  0001 C CNN
-	1    2400 3300
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	2550 3300 2750 3300
+	3250 2750 3300 2750
 Wire Wire Line
-	2750 3300 2750 3750
-Connection ~ 2750 3750
-Wire Wire Line
-	2250 3750 2000 3750
-Wire Wire Line
-	2000 3750 2000 3700
-Wire Wire Line
-	2250 3300 2000 3300
-Wire Wire Line
-	2000 3300 2000 3200
+	3300 2750 3300 3750
+Connection ~ 3300 3750
 $Comp
 L +BATT #PWR0127
 U 1 1 58B2E558
-P 2000 3700
-F 0 "#PWR0127" H 950 800 50  0001 C CNN
-F 1 "+BATT" H 2015 3873 50  0000 C CNN
-F 2 "" H 950 950 50  0001 C CNN
-F 3 "" H 950 950 50  0001 C CNN
-	1    2000 3700
+P 1550 3750
+F 0 "#PWR0127" H 500 850 50  0001 C CNN
+F 1 "+BATT" H 1565 3923 50  0000 C CNN
+F 2 "" H 500 1000 50  0001 C CNN
+F 3 "" H 500 1000 50  0001 C CNN
+	1    1550 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L VUSB #PWR0128
 U 1 1 58B2E98C
-P 2000 3200
-F 0 "#PWR0128" H 850 1100 50  0001 C CNN
-F 1 "VUSB" H 2015 3373 50  0000 C CNN
-F 2 "" H 850 1250 50  0001 C CNN
-F 3 "" H 850 1250 50  0001 C CNN
-	1    2000 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L D D7
-U 1 1 58B2EA81
-P 2400 3750
-F 0 "D7" H 2400 3534 50  0000 C CNN
-F 1 "SS24FL" H 2400 3625 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123F" H 1100 1800 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NTS245SF-D.PDF" H 1100 1800 50  0001 C CNN
-	1    2400 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L C C83
-U 1 1 58B724AF
-P 3150 4000
-F 0 "C83" H 3265 4099 50  0000 L CNN
-F 1 "GRM31CR61H106MA12L" V 3000 3250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 1288 -400 50  0001 C CNN
-F 3 "" H 1250 -250 50  0001 C CNN
-F 4 "50V" H 1350 -300 60  0001 L CNN "Voltage"
-F 5 "20%" H 1350 -200 60  0001 L CNN "Tolerance"
-F 6 "X7R" H 1300 -100 60  0001 L CNN "Type"
-F 7 "1206" H 3265 3909 60  0000 L CNN "Package"
-	1    3150 4000
+P 1250 2650
+F 0 "#PWR0128" H 100 550 50  0001 C CNN
+F 1 "VUSB" H 1265 2823 50  0000 C CNN
+F 2 "" H 100 700 50  0001 C CNN
+F 3 "" H 100 700 50  0001 C CNN
+	1    1250 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -574,4 +503,136 @@ $EndComp
 Wire Wire Line
 	4450 3850 4450 3750
 Connection ~ 4450 3750
+$Comp
+L LTC4412 U14
+U 1 1 58CF19E6
+P 2000 4200
+F 0 "U14" H 2000 4567 50  0000 C CNN
+F 1 "LTC4412ES6" H 2000 4476 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23-6_MK06A" H -350 1750 50  0001 L CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/4412fb.pdf" H 700 1650 50  0001 C CNN
+	1    2000 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 750  2300 0    60   ~ 0
+Limits inrush current to meet USB requirements and has ferrite bead at connector for some filtering
+$Comp
+L MIC94082YFT U15
+U 1 1 58D00FFA
+P 1750 2850
+F 0 "U15" H 1750 3217 50  0000 C CNN
+F 1 "MIC94082YFT" H 1750 3126 50  0000 C CNN
+F 2 "SMD_Packages:TMLF085085D-4LD-9" H -1800 -500 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic94080_5.pdf" H -750 -600 50  0001 C CNN
+	1    1750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2750 1350 2750
+Wire Wire Line
+	1250 2950 1350 2950
+Connection ~ 1250 2750
+Text Notes 1000 3500 0    60   ~ 0
+28V max in (6s li-ion)
+$Comp
+L GND #PWR0139
+U 1 1 58D02606
+P 1750 3150
+F 0 "#PWR0139" H -1500 -1650 50  0001 C CNN
+F 1 "GND" H 1755 2977 50  0000 C CNN
+F 2 "" H -1500 -1400 50  0001 C CNN
+F 3 "" H -1500 -1400 50  0001 C CNN
+	1    1750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q1
+U 1 1 58D0305E
+P 2600 3850
+F 0 "Q1" V 2943 3850 50  0000 C CNN
+F 1 "IRLML5203PbF" V 2852 3850 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H -250 -800 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/irlml5203pbf.pdf?fileId=5546d462533600a40153566868da261d" H -450 -900 50  0001 C CNN
+	1    2600 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 3750 2400 3750
+Wire Wire Line
+	2150 2750 2850 2750
+Wire Wire Line
+	3050 4300 3050 3050
+Wire Wire Line
+	2400 4300 3050 4300
+Wire Wire Line
+	2400 4200 2600 4200
+Wire Wire Line
+	2600 4200 2600 4050
+Wire Wire Line
+	2850 4100 2400 4100
+Wire Wire Line
+	2850 3750 2850 4100
+Connection ~ 2850 3750
+Wire Wire Line
+	1600 4100 1550 4100
+Wire Wire Line
+	1550 4100 1550 3750
+Connection ~ 1550 3750
+$Comp
+L R R46
+U 1 1 58D04424
+P 2950 4100
+F 0 "R46" H 3100 4200 50  0000 L CNN
+F 1 "470k" H 3100 4100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" V -1850 1450 50  0001 C CNN
+F 3 "" V -1570 1450 50  0001 C CNN
+F 4 "1%" H 3100 4000 60  0000 L CNN "Tolerance"
+F 5 "16V" V -1400 1450 60  0001 C CNN "Voltage"
+F 6 "0.062W" V -1300 1450 60  0001 C CNN "Power"
+F 7 "Thin Film" V -1200 1450 60  0001 C CNN "Material"
+F 8 "0402" V -1750 1450 60  0001 C CNN "Package"
+	1    2950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3950 2950 3900
+Wire Wire Line
+	2950 3900 2850 3900
+Connection ~ 2850 3900
+Wire Wire Line
+	2950 4250 2950 4300
+Connection ~ 2950 4300
+Wire Wire Line
+	1550 4450 1550 4200
+Wire Wire Line
+	1550 4200 1600 4200
+$Comp
+L GND #PWR0140
+U 1 1 58D05C20
+P 1550 4450
+F 0 "#PWR0140" H -1700 -350 50  0001 C CNN
+F 1 "GND" H 1555 4277 50  0000 C CNN
+F 2 "" H -1700 -100 50  0001 C CNN
+F 3 "" H -1700 -100 50  0001 C CNN
+	1    1550 4450
+	1    0    0    -1  
+$EndComp
+Text Notes 850  5250 0    60   ~ 0
+When only USB is connected, current will be conducted through the body diode\nThis is a net loss, but it still works and will be more efficient when other source is present
+$Comp
+L Q_PMOS_GSD Q2
+U 1 1 58D0ABA0
+P 3050 2850
+F 0 "Q2" V 3393 2850 50  0000 C CNN
+F 1 "IRLML5203PbF" V 3302 2850 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 200 -1800 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/irlml5203pbf.pdf?fileId=5546d462533600a40153566868da261d" H 0   -1900 50  0001 C CNN
+	1    3050 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 2950 1250 2650
+Wire Wire Line
+	1600 4300 1550 4300
+Connection ~ 1550 4300
 $EndSCHEMATC

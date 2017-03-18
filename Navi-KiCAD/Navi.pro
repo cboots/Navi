@@ -1,4 +1,4 @@
-update=3/16/2017 12:07:51 AM
+update=3/18/2017 9:49:38 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -57,3 +57,9 @@ LibName25=analog_switches
 LibName26=Power_Management
 LibName27=powerint
 LibName28=onsemi
+LibName29=transistors
+LibName30=ESD_Protection
+LibName31=ftdi
+LibName32=stm32
+LibName33=transf
+LibName34=ttl_ieee

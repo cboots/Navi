@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Navi-rescue
 LIBS:device
 LIBS:rfcom
 LIBS:atmel
@@ -26,6 +25,12 @@ LIBS:analog_switches
 LIBS:Power_Management
 LIBS:powerint
 LIBS:onsemi
+LIBS:transistors
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:stm32
+LIBS:transf
+LIBS:ttl_ieee
 LIBS:Navi-cache
 EELAYER 26 0
 EELAYER END
@@ -639,7 +644,7 @@ L L L9
 U 1 1 58AFE5F8
 P 7650 5750
 F 0 "L9" V 7600 5750 50  0000 C CNN
-F 1 "CIH10T22NJNC" V 7725 5750 50  0000 C CNN
+F 1 "BLM18HE152SN1D" V 7725 5750 50  0000 C CNN
 F 2 "Inductors_SMD:L_0603" H 7650 5750 50  0001 C CNN
 F 3 "" H 7650 5750 50  0001 C CNN
 	1    7650 5750
@@ -1652,10 +1657,10 @@ F 7 "0402" H 9065 859 60  0001 L CNN "Package"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR?
+L +3.3V #PWR086
 U 1 1 58CDD174
 P 6450 5750
-F 0 "#PWR?" H 6500 5800 50  0001 C CNN
+F 0 "#PWR086" H 6500 5800 50  0001 C CNN
 F 1 "+3.3V" H 6465 5923 50  0000 C CNN
 F 2 "" H -200 1300 50  0001 C CNN
 F 3 "" H -200 1300 50  0001 C CNN

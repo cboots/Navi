@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Navi-rescue
 LIBS:device
 LIBS:rfcom
 LIBS:atmel
@@ -26,6 +25,12 @@ LIBS:analog_switches
 LIBS:Power_Management
 LIBS:powerint
 LIBS:onsemi
+LIBS:transistors
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:stm32
+LIBS:transf
+LIBS:ttl_ieee
 LIBS:Navi-cache
 EELAYER 26 0
 EELAYER END
