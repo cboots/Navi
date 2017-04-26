@@ -112,9 +112,9 @@ Text HLabel 2150 1700 2    60   BiDi ~ 0
 USBD_P
 Text HLabel 2150 1600 2    60   BiDi ~ 0
 USBD_N
-Text HLabel 2450 4050 0    60   Output ~ 0
+Text HLabel 3300 3400 0    60   Output ~ 0
 CPU-~RESET
-Text HLabel 8950 6100 2    60   Output ~ 0
+Text HLabel 7950 3850 2    60   Output ~ 0
 900-~RESET
 Text HLabel 4500 5100 2    60   Output ~ 0
 2.4-~RESET
@@ -152,9 +152,9 @@ Text Label 9500 2900 0    60   ~ 0
 PD31
 Text HLabel 10000 2900 2    60   BiDi ~ 0
 PD31
-Text HLabel 5650 2250 2    60   BiDi ~ 0
+Text HLabel 7950 2750 2    60   BiDi ~ 0
 AUX_SDA
-Text HLabel 5650 2150 2    60   BiDi ~ 0
+Text HLabel 7950 2550 2    60   BiDi ~ 0
 AUX_SCL
 Text HLabel 4500 3800 2    60   BiDi ~ 0
 CPU_SDA
@@ -312,19 +312,19 @@ Text Label 4250 2600 0    60   ~ 0
 2.4-ADIO-24
 Text Label 4250 2800 0    60   ~ 0
 2.4-ADIO-25
-Text Label 1250 4050 2    60   ~ 0
+Text Label 3750 3300 2    60   ~ 0
 2.4-ADIO-26
-Text Label 1250 4150 2    60   ~ 0
+Text Label 3750 3200 2    60   ~ 0
 2.4-ADIO-27
-Text Label 1250 4250 2    60   ~ 0
+Text Label 3750 3100 2    60   ~ 0
 2.4-ADIO-28
-Text Label 1250 4350 2    60   ~ 0
+Text Label 3750 3000 2    60   ~ 0
 2.4-ADIO-29
 Text Label 4250 2900 0    60   ~ 0
 2.4-ADIO-30
-Text Label 3550 6250 0    60   ~ 0
+Text Label 3750 3700 2    60   ~ 0
 PD17
-Text Label 3550 6150 0    60   ~ 0
+Text Label 3750 3500 2    60   ~ 0
 PC28
 Wire Wire Line
 	4250 3700 4500 3700
@@ -422,15 +422,15 @@ Text Label 6850 1750 2    60   ~ 0
 PB0
 Text Label 6850 1850 2    60   ~ 0
 PA20
-Text Label 5650 1550 2    60   ~ 0
+Text Label 7350 2950 0    60   ~ 0
 PA19
-Text Label 5650 1650 2    60   ~ 0
+Text Label 7350 2650 0    60   ~ 0
 PA18
-Text Label 5650 1750 2    60   ~ 0
+Text Label 7350 2850 0    60   ~ 0
 PA17
-Text Label 5650 1450 2    60   ~ 0
+Text Label 7350 3150 0    60   ~ 0
 PB2
-Text Label 5650 1850 2    60   ~ 0
+Text Label 7350 3050 0    60   ~ 0
 PE4
 Text Label 6850 2650 2    60   ~ 0
 PE5
@@ -438,21 +438,21 @@ Text Label 6850 2550 2    60   ~ 0
 PB3
 Text Label 6850 2450 2    60   ~ 0
 PA21
-Text Label 8350 6300 0    60   ~ 0
+Text Label 7350 3650 0    60   ~ 0
 900-DIO-16
-Text Label 8350 6200 0    60   ~ 0
+Text Label 7350 3450 0    60   ~ 0
 900-DIO-20
 Wire Wire Line
-	8350 6100 8950 6100
+	7350 3850 7950 3850
 Text Label 7350 3950 0    60   ~ 0
 900-DIO-21
-Text Label 8350 6000 0    60   ~ 0
+Text Label 7350 3550 0    60   ~ 0
 900-DIO-17
-Text Label 8350 5900 0    60   ~ 0
+Text Label 7350 3250 0    60   ~ 0
 900-DIO-18
 Text Label 7350 4050 0    60   ~ 0
 900-DIO-22
-Text Label 8150 6300 2    60   ~ 0
+Text Label 7350 3350 0    60   ~ 0
 900-DIO-19
 Text Label 3750 2700 2    60   ~ 0
 PC25
@@ -517,29 +517,29 @@ Text Label 6850 5250 2    60   ~ 0
 900-DIO-12
 Text Label 7350 4950 0    60   ~ 0
 900-DIO-13
-Text Label 8350 5600 0    60   ~ 0
+Text Label 7350 3750 0    60   ~ 0
 900-DIO-14
 Text Label 7350 4450 0    60   ~ 0
 900-DIO-15
 Wire Wire Line
-	5650 2150 5050 2150
+	7950 2550 7350 2550
 Wire Wire Line
-	5650 2250 5050 2250
+	7950 2750 7350 2750
 Wire Wire Line
-	2900 4050 2450 4050
-Text Label 2250 6200 2    60   ~ 0
+	3750 3400 3300 3400
+Text Label 6850 4050 2    60   ~ 0
 PD28
-Text Label 2250 6100 2    60   ~ 0
+Text Label 6850 3950 2    60   ~ 0
 PA27
-Text Label 2250 6000 2    60   ~ 0
+Text Label 6850 3850 2    60   ~ 0
 PA12
-Text Label 2250 5900 2    60   ~ 0
+Text Label 6850 3650 2    60   ~ 0
 PA11
-Text Label 2250 5800 2    60   ~ 0
+Text Label 6850 3750 2    60   ~ 0
 PA26
-Text Label 2250 5700 2    60   ~ 0
+Text Label 6850 3550 2    60   ~ 0
 PA25
-Text Label 2250 5600 2    60   ~ 0
+Text Label 6850 3450 2    60   ~ 0
 PC5
 Text Label 6850 4950 2    60   ~ 0
 PA24
@@ -573,7 +573,7 @@ Text Label 9650 2200 0    60   ~ 0
 PB13
 Text Label 4250 4800 0    60   ~ 0
 PB12
-Text Label 5050 2050 0    60   ~ 0
+Text Label 7350 2150 0    60   ~ 0
 Power-~SHDN
 Wire Wire Line
 	4250 3300 5150 3300
@@ -769,8 +769,6 @@ Wire Wire Line
 	2500 1300 2500 1200
 Connection ~ 2500 1300
 Wire Wire Line
-	5650 1450 5900 1450
-Wire Wire Line
 	4250 5100 4500 5100
 Text Label 9600 900  2    60   ~ 0
 LED_D1
@@ -813,4 +811,28 @@ Wire Wire Line
 Wire Wire Line
 	7450 750  7450 800 
 NoConn ~ 7450 800 
+Text Label 3750 2800 2    60   ~ 0
+LED_D1
+Text Label 3750 2900 2    60   ~ 0
+LED_D2
+Text Label 7350 2250 0    60   ~ 0
+LED_D3
+Text Label 7350 2350 0    60   ~ 0
+LED_D4
+Text Label 7350 2450 0    60   ~ 0
+LED_D8R
+Text Label 3750 3600 2    60   ~ 0
+LED_D9R
+$Comp
+L PWR_FLAG #FLG0145
+U 1 1 59007451
+P 1450 1300
+F 0 "#FLG0145" H -4200 -125 50  0001 C CNN
+F 1 "PWR_FLAG" H 1450 1474 50  0000 C CNN
+F 2 "" H -4200 -200 50  0001 C CNN
+F 3 "" H -4200 -200 50  0001 C CNN
+	1    1450 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 1300
 $EndSCHEMATC
