@@ -517,7 +517,7 @@ L LSM6DS33 U16
 U 1 1 58F64FFA
 P 2550 6300
 F 0 "U16" H 2950 7050 50  0000 C CNN
-F 1 "LSM6DS33" H 2150 7050 50  0000 C CNN
+F 1 "LSM6DS33TR" H 2150 7050 50  0000 C CNN
 F 2 "Housings_LGA:LGA-16L_3x3mm_Pitch0.5mm" H -3100 2250 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/ed/aa/b8/e5/ab/3a/41/df/DM00157718.pdf/files/DM00157718.pdf/jcr:content/translations/en.DM00157718.pdf" H -4600 2650 50  0001 C CNN
 	1    2550 6300
@@ -860,7 +860,7 @@ L LSM303AH U17
 U 1 1 58FC3C43
 P 7650 5250
 F 0 "U17" H 8191 5296 50  0000 L CNN
-F 1 "LSM303AH" H 8191 5205 50  0000 L CNN
+F 1 "LSM303AHTR" H 8191 5205 50  0000 L CNN
 F 2 "Housings_LGA:LGA-12_2x2mm_Pitch0.5mm" H 50  -450 50  0001 L CNN
 F 3 "www.st.com/resource/en/datasheet/lsm303ah.pdf" H -50 900 50  0001 C CNN
 	1    7650 5250
